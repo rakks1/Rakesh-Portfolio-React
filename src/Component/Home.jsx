@@ -19,7 +19,7 @@ const Home = () => {
  <span className="hi">Hello :{")"}</span>
  <span className="im">I'm</span>
  <span className="rakesh-kumar">{"<"}Rakesh Kumar{"/>"}</span>
- <span className='im'>I'm a<TypingEffect /></span>
+ <span className='im'>I'm a <TypingEffect /></span>
 
  <span className="designing-for-delight">
    Passionate about Designing for Delight and Usability.
