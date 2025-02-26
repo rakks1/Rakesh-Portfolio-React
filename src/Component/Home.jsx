@@ -11,7 +11,7 @@ const Home = () => {
       </div>
 
 <div className="logo">
-     <img src="assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+     <img src="https://github.com/rakks1/Rakesh-Portfolio-React/blob/main/public/assets/logo.png?raw=true" alt="logo" width={'50px'} height={'50px'} />
 </div>
 
 <div className="flex-column-a">
