@@ -8,12 +8,12 @@ const About = () => {
       <div className="about-container">
 
       <div className="logo">
-     <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+     <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
 </div>
       <div className="bg-animation-1">
         <div id="stars-1"></div>
     </div>
-      <img className='rakksimg' src="/assets/rakks.jpeg" alt="" />
+      <img className='rakksimg' src="./assets/rakks.jpeg" alt="" />
       <span className="about-me">About Me</span>
         <span className="ui-ux-designer">Hello! I'm Rakesh Kumar S, a passionate UI/UX designer and front-end
           developer. With expertise in Figma, Photoshop, HTML5, CSS3,
