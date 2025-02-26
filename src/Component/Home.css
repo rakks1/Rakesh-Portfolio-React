@@ -8,7 +8,7 @@
     align-items: center;
     background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #fc5179, #d840b6);
     background-size: 400% 400%;
-    animation: bg 12s ease infinite;
+    animation: bg 15s ease infinite;
 }
     @keyframes bg {
         0% {
@@ -56,8 +56,8 @@
   .im {
     color: #ffffff;
     font-family: var(--font-family);
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    font-weight: 375;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-weight: 400;
     z-index: 5;
 
   }
