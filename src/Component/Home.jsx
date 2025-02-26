@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import TypingEffect from './TypingEffect';
 import './Home.css';
 
 const Home = () => {
