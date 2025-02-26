@@ -29,7 +29,7 @@ const About = () => {
           trends in web development and design.Let's connect and build
           something amazing together! Reach out at rakeshkumarneelankarai@gmail.com or connect with me on LinkedIn.</span>
       <div className="flex-row-2">
-          <a to='https://rakks1.github.io/Portfolio-Website/Rakesh%20Kumar%20S%20Profile.pdf' className="rectangle-1 view-resume" >View Resume</a>
+          <a href=''download="Rakesh Kumar S Profile.pdf" className="rectangle-1 view-resume" >Download Resume</a>
           <Link to='/experience' className="rectangle-1 my-experience" >My Experience</Link>
         </div>
       </div>

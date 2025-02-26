@@ -42,6 +42,7 @@ const Home = () => {
 
    <Link to="/about" className="more-about-me rectangle-1">More About Me</Link>
    
+   <p className='credits'>rakeshkumarneelankarai@gmail.com |+91-86672-95448 | © Rakesh Kumar 2025</p>
 </div>
 </div>
     </div>
