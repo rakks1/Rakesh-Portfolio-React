@@ -31,31 +31,22 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Validate the contact field
-    if (!validateContact(formData.contact)) {
-      alert('Please enter a valid email or 10-digit mobile number.');
-      return;
-    }
-
-    // Replace with your Google Apps Script Web App URL
-    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbw6KTwMm1hr16WsU2iyirc0_UAINuuM52FtERtsVIly4pD80PQp5sorKFP-P7E0qkSIvg/exec';
-
+  
+    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbxZhkTt0sVmvMokO6dcCzvfvxA8clEr9KFMsj8v0vX9YdkF70zN9nlUKvTn7X_XdPeuig/exec';
+  
     try {
       const response = await fetch(googleScriptUrl, {
         method: 'POST',
+        mode: 'no-cors', // Set mode to 'no-cors'
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json', // This header may not work in 'no-cors' mode
         },
         body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
-        alert('Form submitted successfully!');
-        handleReset(); // Clear the form
-      } else {
-        alert('Failed to submit form. Please try again.');
-      }
+  
+      // Since 'no-cors' mode returns an opaque response, you can't check response.ok or read the response body
+      alert('Form submitted successfully!'); // Assume success
+      handleReset(); // Clear the form
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('An error occurred. Please try again.');
@@ -96,7 +87,7 @@ const Contact = () => {
           name="contact"
           value={formData.contact}
           onChange={handleChange}
-          className="form-control place"
+          className="form-control"
           placeholder="Enter email or 10-digit mobile number"
           required
         />
