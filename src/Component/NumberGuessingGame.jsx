@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './NumberGuessingGame.css';
 
 // Define the function to generate a random number
@@ -12,6 +13,12 @@ const NumberGuessingGame = () => {
   const [points, setPoints] = useState(10); // State to keep track of points
   const [attempts, setAttempts] = useState(5); // State to keep track of attempts
   const [gameOver, setGameOver] = useState(false); // State to track game over
+
+  const navigate = useNavigate();
+            
+  const handleNavigation = () => {
+    navigate('/reactpro');
+  };
 
   const handleGuess = () => {
     const userGuess = parseInt(guess, 10);
@@ -74,6 +81,8 @@ const NumberGuessingGame = () => {
         <div className="logo">
           <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
         </div>
+        <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
+
         <div className='gamewindow'>
     <h2 className='game-title'>Number Guessing Game</h2>
     <p className='points'>Points: {points}</p>

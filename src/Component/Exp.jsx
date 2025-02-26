@@ -1,8 +1,13 @@
 import React from 'react';
 import './Exp.css';
-import { Link } from 'react-router-dom';
+import { Link ,  useNavigate} from 'react-router-dom';
 
 const Exp = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/about');
+  };
   return (
      <div className="exp">
          <div className="bg-animation">
@@ -11,6 +16,8 @@ const Exp = () => {
       <div className="logo">
      <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
      </div>
+     <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
+
       <h2 className="exp__title">Professional Experience</h2>
       <h4 className="exp__role">
         WEB DESIGNING INTERN- UI/UX DESIGNER & FRONT-END DEVELOPER<br />

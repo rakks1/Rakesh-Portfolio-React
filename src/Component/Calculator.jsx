@@ -1,7 +1,16 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Calculator.css';
 
 function Calculator() {
+
+  
+      const navigate = useNavigate();
+            
+              const handleNavigation = () => {
+                navigate('/reactpro');
+              };
+
   const [count, setCount] = useState('');
   const [error, setError] = useState(false);
 
@@ -37,6 +46,7 @@ function Calculator() {
           <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
         </div>
         <h2 className="pro_title">React Calculator</h2>
+        <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
         <form className='calsize'>
           <input type="text" value={error ? "Invalid expression" : count} readOnly className={error ? "error-input" : ""}/>
           <button type="button" className='calbtn' onClick={() => click("1")}>1</button>

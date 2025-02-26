@@ -1,18 +1,24 @@
 import React from 'react'
 import './About.css'
-import { Link, parsePath } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
+
 const About = () => {
-  
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/');
+  };
   return (
     <div>
       <div className="about-container">
 
       <div className="logo">
      <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
-</div>
+    </div>
       <div className="bg-animation-1">
         <div id="stars-1"></div>
     </div>
+    <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
       <img className='rakksimg' src="./assets/rakks.jpeg" alt="" />
       <span className="about-me">About Me</span>
         <span className="ui-ux-designer">Hello! I'm Rakesh Kumar S, a passionate UI/UX designer and front-end

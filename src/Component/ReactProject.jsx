@@ -2,9 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 
 import './ReactProject.css';
-import {Link, Router, Routes} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 const ReactProject = () => {
+
+    const navigate = useNavigate();
+          
+            const handleNavigation = () => {
+              navigate('/projects');
+            };
+
     const [isOpen, setIsOpen] = useState(false);
     const handleClick = () => setIsOpen(false);
 
@@ -17,6 +24,7 @@ const ReactProject = () => {
                 <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
             </div>
             <h2 className="pro_title rpro">React Projects</h2>
+            <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
             <div className='app-container'>
                 <div className='apphover'>
                 <Link to="/calc" onClick={handleClick}className='calcapp'>

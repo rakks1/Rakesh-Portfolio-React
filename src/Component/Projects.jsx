@@ -1,10 +1,15 @@
 import React from 'react';
 import './Projects.css';
 import Testimonials from './Testimonials';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 
 
 const Projects = () => {
+   const navigate = useNavigate();
+      
+        const handleNavigation = () => {
+          navigate('/skills');
+        };
   const testimonialsData1 = [
     {
       name: "Profile-Card-Component",
@@ -89,6 +94,7 @@ const Projects = () => {
         <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
       </div>
       <h2 className="pro_title">My Projects</h2>
+      <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
       <div className="gridp container-XS">
         <div className="tone">
           <h4>Front-End Mentor Challenges</h4>

@@ -1,9 +1,14 @@
 import React from 'react';
 import './Skills.css';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 
 
 const Skills = () => {
+     const navigate = useNavigate();
+    
+      const handleNavigation = () => {
+        navigate('/experience');
+      };
   return (
     <div className="skill-container">
        <div className="bg-animation">
@@ -12,6 +17,7 @@ const Skills = () => {
       <div className="logo">
      <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
      </div>
+     <i className="bi bi-arrow-left" onClick={handleNavigation}></i>
       <h2 className="skill__title">My Skills</h2>
       <div className='img-container'>
       <div className='technology rectangle-1'>

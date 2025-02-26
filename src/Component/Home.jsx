@@ -12,14 +12,14 @@ const Home = () => {
       </div>
 
 <div className="logo">
-     <img src="https://github.com/rakks1/Rakesh-Portfolio-React/blob/main/public/assets/logo.png?raw=true" alt="logo" width={'50px'} height={'50px'} />
+     <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
 </div>
 
 <div className="flex-column-a">
- <span className="hi">Hello :{")"}</span>
+ <span className="hi">Hello ! Welcome to my portfolio : {")"} </span>
  <span className="im">I'm</span>
  <span className="rakesh-kumar">{"<"}Rakesh Kumar{"/>"}</span>
- <span className='im'>I'm a <TypingEffect /></span>
+ <span className='type'>I'm a <TypingEffect /></span>
 
  <span className="designing-for-delight">
    Passionate about Designing for Delight and Usability.

@@ -47,13 +47,22 @@
   .hi {
     color: #ffffff;
     font-family: var(--font-family);
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.6rem);
     font-weight: 275;
     z-index: 5;
 
   }
+
+  .im{
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 270;
+    z-index: 5;
+
+  }
   
-  .im {
+  .type{
     color: #ffffff;
     font-family: var(--font-family);
     font-size: clamp(1rem, 2vw, 1.7rem);
@@ -203,7 +212,7 @@
   }
   
   .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.13);
   }
 
 

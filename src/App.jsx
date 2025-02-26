@@ -35,7 +35,6 @@ function App() {
             <Link to="/projects" onClick={handleClick}>Projects</Link>
             <Link to="/contact" onClick={handleClick}>Contact</Link>
           </div>
-
         </div>
         
         <Routes>
