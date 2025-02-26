@@ -1,0 +1,65 @@
+.skill-container{
+    width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  z-index: 10;
+  flex-wrap: wrap;
+    background: linear-gradient(132deg,#7a089f,#f271a8,#2750b9);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+} @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .skill__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+.technology{
+    width: clamp(2rem , 8vw , 8rem);
+    font-size:clamp(.2rem , 2vw , 1rem); ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.simg{
+    width: clamp(2rem , 5vw , 8rem);
+    z-index: 100;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.technology.rectangle-1:hover{
+    background-color: rgba(0, 0, 0, 0.141);
+}

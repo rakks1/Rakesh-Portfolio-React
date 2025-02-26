@@ -1,0 +1,102 @@
+
+.exp{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  flex-wrap: wrap;
+    background: linear-gradient(132deg,#7a089f,#f271a8,#2750b9);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+ 
+
+.exp__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    z-index: 1;
+    position: relative;
+    top: 60px;
+    color: #ffffff;
+}
+.exp__role{
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(.5rem, 2vw, 1.2rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    position: relative;
+    top: 60px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+.exp__date{
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(.5rem, 1vw, 1rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    position: relative;
+    top: 30px;
+    color: #ffffff;
+}
+.exp__heading{
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(.8rem, 2vw, 1rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    position: relative;
+    top: 30px;
+    width: 80%;
+    color: #ffffff;
+}
+.exp__content{
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(.5rem, 1.5vw, .8rem);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    width: 70%;
+    color: #ffffff;
+}
+.content1{
+    position: relative;
+    top: 30px;
+}
+.exp__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 28%;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: 10%;
+
+}

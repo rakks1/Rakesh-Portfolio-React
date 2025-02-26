@@ -1,0 +1,87 @@
+.game-container {
+    width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  z-index: 2;
+  flex-wrap: wrap;
+  background: linear-gradient(132deg,#ffc209,#ff368d,#006aff);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
+  .game-title {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .points, .attempts {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .game-input {
+    width: 200px;
+    padding: 5px;
+    font-size: 1.2em;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #61dafb00;
+    text-align: center;
+    background-color: #00000094;
+  }
+
+  .game-input::placeholder{
+    color: rgba(255, 255, 255, 0.326);
+    font-size: 1rem;
+  }
+  
+  .guess-btn, .reset-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .guess-btn:hover, .reset-btn:hover {
+    background-color: #0b01c0;
+  }
+  
+  .message {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .gamewindow{
+    border: 2px solid rgba(0, 0, 0, 0.114);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #00000038;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: clamp(250px,70vw,500px);
+  }

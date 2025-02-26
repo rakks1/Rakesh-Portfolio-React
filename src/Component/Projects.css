@@ -1,0 +1,119 @@
+.pro-container{
+    width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  z-index: 10;
+  flex-wrap: wrap;
+    background: linear-gradient(132deg,#7a089f,#f271a8,#2750b9);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+} @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .pro_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    font-family: Poppins, var(--default-font-family);
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3.6px;
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+}
+
+
+.gridp{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-column-gap: 60px;
+    grid-template-areas: "tone ttwo tthree" "one two three";
+    position: relative;
+    text-align: center;
+}
+.gricent{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+    padding: 0;
+    margin: 0 !important;
+}
+
+
+.container_block1{
+    grid-area: one; 
+    position: relative;
+    left: 3px;
+}
+.container_block2{
+  grid-area: two;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+
+}
+.container_block3{
+  grid-area: three;
+
+}
+
+.conimg{
+  min-width: 100px;
+  width: 60% !important;
+  height: 55%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+}
+.conname{
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.probtn1{
+    margin: 10px;
+}
+.probtn2{
+    margin: 10px;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .gridp{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(350px, 1fr);
+        grid-template-areas: "tone" "one" "ttwo" "two" "tthree" "three" ;
+        position: relative;
+        top: -50px;
+        text-align: center;
+        overflow: visible; 
+        grid-row-gap: 50px;
+        
+    }
+
+    .pro-container{
+        height: 1600px;
+    }
+
+    .proan{
+        position: relative;
+        top: 40px;
+    }
+}
+
