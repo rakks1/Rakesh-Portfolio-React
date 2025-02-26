@@ -1,6 +1,6 @@
 
 .contact-form {
-    width: 99vw;
+    width: 98vw;
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -94,5 +94,9 @@
     position: relative;
     text-align: center;
     font-weight: 500;
+  }
+  .place::placeholder{
+    color: #f0f8ff27;
+    font-weight: 300 !important;
   }
   

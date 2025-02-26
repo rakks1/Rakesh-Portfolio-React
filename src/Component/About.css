@@ -141,7 +141,7 @@
 }
 
 .bi-arrow-left{
-    position: absolute;
+    position: fixed;
     bottom:55px;
     left: 60px;
     font-size: 50PX ;
