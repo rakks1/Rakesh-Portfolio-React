@@ -27,7 +27,7 @@ const WeatherApp = () => {
           <div id="stars"></div>
         </div>
         <div className="logo">
-          <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+          <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
         </div>
             <h1 className="title">Weather App</h1>
             <div className="input-container">

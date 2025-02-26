@@ -9,7 +9,7 @@ const Exp = () => {
         <div id="stars"></div>
       </div>
       <div className="logo">
-     <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+     <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
      </div>
       <h2 className="exp__title">Professional Experience</h2>
       <h4 className="exp__role">

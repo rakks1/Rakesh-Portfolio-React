@@ -72,7 +72,7 @@ const NumberGuessingGame = () => {
           <div id="stars"></div>
         </div>
         <div className="logo">
-          <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+          <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
         </div>
         <div className='gamewindow'>
     <h2 className='game-title'>Number Guessing Game</h2>

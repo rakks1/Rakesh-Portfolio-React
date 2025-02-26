@@ -27,25 +27,25 @@ const Projects = () => {
   const testimonialsData2 = [
     {
       name: "Handicap Website",
-      image: "/assets/Handicap.png",
+      image: "./assets/Handicap.png",
       text: "Visit My Page",
       link: "https://rakks1.github.io/Handicap-Empowerment/index.html"
     },
     {
       name: "Portfolio ",
-      image: "/assets/Port.png",
+      image: "./assets/Port.png",
       text: "Visit My Page",
       link: "https://rakks1.github.io/Portfolio-Website/"
     },
     {
         name: "React Portfolio",
-        image: "/assets/ReactPort.png",
+        image: "./assets/ReactPort.png",
         text: "You Are Here",
         link: "/"
     },
       {
         name: "React Calculator",
-        image: "/assets/Calc.png",
+        image: "./assets/Calc.png",
         text: "Visit My Page",
         link: "https://rakks1.github.io/Portfolio-Website/"
       },
@@ -60,7 +60,7 @@ const Projects = () => {
   const testimonialsData3 = [
     {
         name: "Figma Portfolio Prototype",
-        image: "/assets/figmaport.png",
+        image: "./assets/figmaport.png",
         text: "Visit My Prototype",
         link: "https://www.figma.com/proto/5yC1tYDpFvZTjFe9BL2LP3/Rakesh-Kumar-Portfolio?page-id=0%3A1&node-id=87-167&viewport=298%2C-127%2C0.23&t=Z6RTiKHzxjOwiRTy-1&scaling=contain&content-scaling=fixed&starting-point-node-id=87%3A167"
     },
@@ -86,7 +86,7 @@ const Projects = () => {
         <div id="stars"></div>
       </div>
       <div className="logo">
-        <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+        <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
       </div>
       <h2 className="pro_title">My Projects</h2>
       <div className="gridp container-XS">

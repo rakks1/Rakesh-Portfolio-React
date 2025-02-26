@@ -34,7 +34,7 @@ function Calculator() {
           <div id="stars"></div>
         </div>
         <div className="logo">
-          <img src="/assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
+          <img src="./assets/logo.png" alt="logo" width={'50px'} height={'50px'} />
         </div>
         <h2 className="pro_title">React Calculator</h2>
         <form className='calsize'>
