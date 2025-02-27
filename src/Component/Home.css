@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #4158D0, #e560dc, #ff9f4a, #fc5179, #d840b6);
+    background: linear-gradient(-45deg, #203ab9, #e132d5, #ff9f4a, #fc5179, #da23b2);
     background-size: 400% 400%;
     animation: bg 15s ease infinite;
 }
@@ -305,5 +305,10 @@
     font-size: 2vw !important;
     bottom: 20px;
  }
+
+ .flex-column-a {
+   gap: 2.5rem !important;
+
+}
 
 }
