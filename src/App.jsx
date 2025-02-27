@@ -17,17 +17,17 @@ function App() {
 
 
   return (
-    <Router>
+    <Router >
 
         <div className="menu-container">
 
-          <div className="burger-menu" onClick={() => setIsOpen(!isOpen)} onMouseEnter={() => setIsOpen(!isOpen)}>
+          <div className="burger-menu" onClick={() => setIsOpen(!isOpen)} >
             <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
             <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
             <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
           </div>
           
-          <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
+          <div className={`nav-menu ${isOpen ? 'open' : ''}`} onMouseLeave={() => setIsOpen(!isOpen)}>
             <Link to="/"onClick={handleClick}>Home</Link>
             <Link to="/about" onClick={handleClick}>About</Link>
             <Link to="/experience" onClick={handleClick}>Experience</Link>
