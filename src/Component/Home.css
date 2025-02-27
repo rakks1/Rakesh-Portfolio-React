@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #fc5179, #d840b6);
+    background: linear-gradient(-45deg, #4158D0, #e560dc, #ff9f4a, #fc5179, #d840b6);
     background-size: 400% 400%;
     animation: bg 15s ease infinite;
 }
@@ -37,9 +37,8 @@
   
   .rakesh-kumar {
     color: #ffffff;
-    font-family: var(--font-family);
     font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 100;
+    font-weight: 300 !important;
     z-index: 5;
 
   }
@@ -294,7 +293,17 @@
 }
 
 .credits{
-   position: absolute;
-   font-size: .8vw;
-   bottom: 5px;
+  position: absolute;
+  font-size: .6rem;
+  bottom: 5px;
+}
+
+/* CSS for screens between 300px and 700px */
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+
+  .credits{
+    font-size: 2vw !important;
+    bottom: 20px;
+ }
+
 }
